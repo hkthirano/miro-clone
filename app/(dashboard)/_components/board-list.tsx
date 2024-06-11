@@ -15,8 +15,6 @@ interface BoardListProps {
 export const BoardList = ({ orgId, query }: BoardListProps) => {
     const data = [];
 
-    console.log("BoardList", query)
-
     if (!data?.length && query.search) {
         return <EmptySearch />
     }
