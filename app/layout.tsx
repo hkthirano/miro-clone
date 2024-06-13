@@ -5,6 +5,7 @@ import ConvexClientProvider from "@/providers/convex-client-provider";
 import { Suspense } from "react";
 import { Loading } from "@/components/auth/loading";
 import { Toaster } from "@/components/ui/sonner";
+import { ModalProvider } from "@/providers/modal-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Suspense fallback={<Loading />}>
           <ConvexClientProvider>
             <Toaster />
+            <ModalProvider />
             {children}
           </ConvexClientProvider>
         </Suspense>
