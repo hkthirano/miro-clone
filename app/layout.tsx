@@ -1,4 +1,3 @@
-
 import { Inter } from "next/font/google";
 import { Suspense } from "react";
 
@@ -34,7 +33,6 @@ export default function RootLayout({
           </ConvexClientProvider>
         </Suspense>
       </body>
-
     </html>
   );
 }
