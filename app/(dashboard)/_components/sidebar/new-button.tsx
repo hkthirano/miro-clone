@@ -1,7 +1,7 @@
 "use client"
 
-import { Plus } from "lucide-react"
 import { CreateOrganization } from "@clerk/clerk-react"
+import { Plus } from "lucide-react"
 
 import {
     Dialog,

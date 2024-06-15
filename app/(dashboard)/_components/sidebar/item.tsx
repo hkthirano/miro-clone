@@ -1,7 +1,7 @@
 "use client"
 
-import Image from "next/image";
 import { useOrganization, useOrganizationList } from "@clerk/nextjs"
+import Image from "next/image";
 
 import { Hint } from "@/components/ui/hint";
 import { cn } from "@/lib/utils";

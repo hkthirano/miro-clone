@@ -1,12 +1,13 @@
 "use client"
 
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-
-import { api } from "@/convex/_generated/api"
 import { useOrganization } from "@clerk/nextjs";
-import { useApiMutation } from "@/hooks/use-api-mutation";
+import Image from "next/image";
 import { toast } from "sonner"
+
+import { Button } from "@/components/ui/button";
+import { api } from "@/convex/_generated/api"
+import { useApiMutation } from "@/hooks/use-api-mutation";
+
 
 export const EmptyBoards = () => {
     const { organization } = useOrganization()
